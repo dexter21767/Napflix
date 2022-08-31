@@ -1,7 +1,7 @@
 {
-	"name": "stremio-addon-StreamAR",
+	"name": "stremio-addon-napflix",
 	"version": "0.0.1",
-	"description": "Addon for Streaming from Arabic websites",
+	"description": "Napflix | Siesta Video Platform. by dexter21767",
 	"scripts": {
 		"start": "node server.js"
 	},
