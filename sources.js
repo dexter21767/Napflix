@@ -34,7 +34,7 @@ async function meta(id) {
             }
             var napflix_vid = napflix[key];
             var metaObj = {
-                id: 'yt_id:' + napflix_vid['text_code'],
+                id: 'nf_id:' + napflix_vid['text_code'],
                 name: napflix_vid['text_title'],
                 posterShape: 'landscape',
                 type: "channel",
@@ -60,7 +60,7 @@ async function catalog(genre) {
                 results.push({
                     name: napflix[key]['text_title'],
                     type: "channel",
-                    id: 'yt_id:' + napflix[key]['text_code'],
+                    id: 'nf_id:' + napflix[key]['text_code'],
                     releaseInfo: napflix[key]['date_init'].split('/')[2],
                     poster: napflix[key]['path_img'],
                     posterShape: 'landscape',
@@ -83,7 +83,7 @@ async function catalog(genre) {
                 name: napflix[key]['text_title'],
                 type: "channel",
                 genres: cat,
-                id: 'yt_id:' + napflix[key]['text_code'],
+                id: 'nf_id:' + napflix[key]['text_code'],
                 releaseInfo: napflix[key]['date_init'].split('/')[2],
                 poster: napflix[key]['path_img'],
                 posterShape: 'landscape'

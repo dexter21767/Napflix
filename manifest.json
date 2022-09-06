@@ -1,6 +1,6 @@
 {
     "id": "community.napflix",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "Napflix | Siesta Video Platform. by dexter21767",
     "description": "We all know the feeling of insomnia. Your body wants to sleep but your mind is still awake and active. So how can we steady up our mind. Napflix is a parody video platform where you can find the most silent and sleepy content selection to relax your brain and easily fall asleep. Taking siesta wherever and whenever you like.",
     "logo": "https://www.napflix.tv/img/share1.png",
@@ -28,14 +28,14 @@
                 "channel"
             ],
             "idPrefixes": [
-                "yt_id:"
+                "nf_id:"
             ]
         }, {
             "name": "meta",
             "types": [
                 "channel"
             ],
-            "idPrefixes": ["yt_id:"]
+            "idPrefixes": ["nf_id:"]
         }
     ],
     "types": [

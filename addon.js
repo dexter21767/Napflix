@@ -9,7 +9,7 @@ const builder = new addonBuilder(manifest)
 
 builder.defineStreamHandler((args) => {
 	console.log("addon.js streams:", args);
-  if(args.id.match(/yt_id:[^xyz]*/i)){
+  if(args.id.match(/nf_id:[^xyz]*/i)){
     return Promise.resolve(sources.stream(args.id))
 	.then((streams) => ({  streams: [streams]}));
 	//.then((streams) => { console.log('streams', args+streams)});
@@ -34,7 +34,7 @@ builder.defineCatalogHandler((args) => {
 builder.defineMetaHandler((args) => {
 	console.log("addon.js meta:", args);
 
-	if(args.id.match(/yt_id:[^xyz]*/i)){
+	if(args.id.match(/nf_id:[^xyz]*/i)){
     return Promise.resolve(sources.meta(args.id))
         //.then((metas) => { console.log('metas', metas)});
         .then((meta) => ({ meta: meta}));
